@@ -1,6 +1,16 @@
-# Ember-sbe-tooling
+# ember-sbe-tooling
 
-This README outlines the details of collaborating on this Ember addon.
+## Usage
+
+```
+// add this line to your package.json
+"ember-sbe-tooling": "git+ssh://git@github.com:showbie/ember-sbe-tooling.git#v0.1.0",
+
+// ...then run
+ember g ember-sbe-tooling
+```
+
+# Collaboration
 
 ## Installation
 

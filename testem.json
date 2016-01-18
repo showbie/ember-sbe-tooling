@@ -2,6 +2,8 @@
   "framework": "qunit",
   "test_page": "tests/index.html?hidepassed",
   "disable_watching": true,
+  "reporter": "xunit",
+  "report_file": "tests/reports/QUnit.xml",
   "launch_in_ci": [
     "PhantomJS"
   ],
