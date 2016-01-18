@@ -1,3 +1,4 @@
+// jscs:disable
 /*jshint node:true*/
 module.exports = {
   description: 'Install Showbie code style enforcement configuration and tooling',
