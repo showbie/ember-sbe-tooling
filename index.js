@@ -3,4 +3,8 @@
 
 module.exports = {
   name: 'ember-sbe-tooling'
+
+  // ,isDevelopingAddon: function() {
+  //   return true;
+  // }
 };
