@@ -1,4 +1,4 @@
-# ember-sbe-tooling
+# ember-sbe-tooling [![Circle CI][circleci-status]][circleci]
 
 ## Usage
 
@@ -34,3 +34,7 @@ ember g ember-sbe-tooling
 * `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+
+[circleci]: https://circleci.com/gh/showbie/ember-sbe-tooling
+[circleci-status]: https://circleci.com/gh/showbie/ember-sbe-tooling.svg?style=svg&circle-token=765ec6a19d3220402d1f2d3af00c7e8fab6ae7c0
