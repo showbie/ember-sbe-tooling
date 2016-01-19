@@ -3,9 +3,9 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-sbe-tooling'
+  name: 'ember-sbe-tooling',
 
-  // ,isDevelopingAddon: function() {
-  //   return true;
-  // }
+  isDevelopingAddon: function() {
+    return true;
+  }
 };
