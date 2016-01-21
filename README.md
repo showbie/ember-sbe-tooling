@@ -7,6 +7,7 @@
 "ember-sbe-tooling": "git+ssh://git@github.com:showbie/ember-sbe-tooling.git#v0.1.0",
 
 // ...then run
+npm install
 ember g ember-sbe-tooling
 ```
 
