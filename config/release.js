@@ -15,7 +15,7 @@ module.exports = {
       var slack = new Slack(hookURL);
 
       return slack.send({
-        text: '*' + project.name() + '* ' + tags.next + ' just dropped :bangbang: :100: :100: :fire: :fire: :mindblown: :boom: :eyes :clap:'
+        text: '*' + project.name() + '* ' + tags.next + ' just dropped :bangbang: :100: :100: :fire: :fire: :mindblown: :boom: :eyes: :clap:'
       });
     }
   }
