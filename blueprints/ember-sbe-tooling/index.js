@@ -6,8 +6,6 @@ module.exports = {
   normalizeEntityName: function() {}, // no-op since we're just adding dependencies
 
   beforeInstall: function(options) {
-    var self = this;
-
     return this.addAddonsToProject({
       packages: [
         'ember-suave'

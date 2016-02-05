@@ -1,7 +1,5 @@
-# see http://pre-commit.com/#usage and run `pre-commit --help` for more info
-# To update these hooks, run `pre-commit autoupdate` and commit the changes.
 -   repo: git@github.com:pre-commit/pre-commit-hooks
-    sha: 64943e86417774b9d6ba63c74e00f8cc3e2119e0
+    sha: d740faeded968de3881405d7de09dc6d2e0d7b06
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -25,7 +23,7 @@
     hooks:
     -   id: scss-lint
 -   repo: git@github.com:elidupuis/mirrors-jscs.git
-    sha: c32a15eac3e747f363d8fa3ed274ad3be83cf965
+    sha: 5c6ba4da7eb5a09e0c1f849a5f86f5dcb871f876
     hooks:
     -   id: jscs
         language_version: 4.2.4
