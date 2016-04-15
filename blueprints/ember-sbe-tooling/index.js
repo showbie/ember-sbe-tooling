@@ -8,7 +8,7 @@ module.exports = {
   beforeInstall: function(options) {
     return this.addAddonsToProject({
       packages: [
-        'ember-suave'
+        { name: 'ember-suave', target: '1.2.3' }
       ]
     });
   }
