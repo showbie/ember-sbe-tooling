@@ -1,3 +1,5 @@
+# see http://pre-commit.com/#usage and run `pre-commit --help` for more info
+# To update these hooks, run `pre-commit autoupdate` and commit the changes.
 -   repo: git@github.com:pre-commit/pre-commit-hooks
     sha: 17478a0a50faf20fd8e5b3fefe7435cea410df0b
     hooks:
