@@ -4,14 +4,15 @@
 
 // See http://eslint.org/
 module.exports = {
-  'env': {
-    'browser': true,
-    'es6': true
+  env: {
+    browser: true,
+    es6: true
   },
-  'ecmaFeatures': {
-    'modules': true
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module'
   },
-  'rules': {
+  rules: {
     'arrow-parens': 2,
     'arrow-spacing': 2,
     'no-console': 2,

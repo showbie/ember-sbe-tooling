@@ -14,7 +14,7 @@
     -   id: jshint
         language_version: 4.2.6
 -   repo: git@github.com:pre-commit/mirrors-eslint
-    sha: 6a5749410dee3a4686e51a0db72767a5b9b9f68d
+    sha: 02999128135512d63e07d4a8a05d424cde3fe5d1
     hooks:
     -   id: eslint
         args:
