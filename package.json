@@ -49,6 +49,7 @@
     "ember-cli-babel": "^5.1.6"
   },
   "ember-addon": {
+    "defaultBlueprint": "showbie-tooling",
     "configPath": "tests/dummy/config",
     "versionCompatibility": {
       "ember": ">1.13.0 <=2.5.0"
