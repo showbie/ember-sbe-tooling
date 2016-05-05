@@ -8,7 +8,8 @@ module.exports = {
   beforeInstall: function(options) {
     return this.addAddonsToProject({
       packages: [
-        { name: 'ember-suave', target: '1.2.3' }
+        { name: 'ember-suave', target: '1.2.3' },
+        { name: 'ember-cli-code-coverage', target: '0.1.0' }
       ]
     });
   }

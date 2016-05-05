@@ -21,6 +21,11 @@ test:
         - pre-commit run --all-files
         - npm test
     post:
+        # Collect code coverage artifacts; see https://github.com/kategengler/ember-cli-code-coverage
+        # Depends on environment variable `COVERAGE` being set in CI
+        # You can also run locally: `COVERAGE=true ember test`
+        - mkdir -p $CIRCLE_ARTIFACTS/coverage
+        - cp -r coverage/* $CIRCLE_ARTIFACTS/coverage
         # Collect xunit artifact; see https://circleci.com/docs/test-metadata#js
         # Depends on `testem.json` having:
         # ```js
