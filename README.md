@@ -4,11 +4,11 @@
 
 ```
 // add this line to your package.json
-"ember-sbe-tooling": "git+ssh://git@github.com:showbie/ember-sbe-tooling.git#v0.1.0",
+"ember-sbe-tooling": "git+ssh://git@github.com:showbie/ember-sbe-tooling.git#v0.1.5",
 
 // ...then run
 npm install
-ember g ember-sbe-tooling
+ember g showbie-tooling
 ```
 
 # Collaboration
@@ -26,7 +26,7 @@ ember g ember-sbe-tooling
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
