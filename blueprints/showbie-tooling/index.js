@@ -9,7 +9,7 @@ module.exports = {
     return this.addAddonsToProject({
       packages: [
         { name: 'ember-suave', target: '1.2.3' },
-        { name: 'ember-cli-code-coverage', target: '0.1.0' }
+        { name: 'ember-cli-code-coverage', target: '0.2.2' }
       ]
     });
   }

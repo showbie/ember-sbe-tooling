@@ -12,14 +12,14 @@
     sha: 0b547c64213cc0dda0aa8e6b420a38a356d51e7a
     hooks:
     -   id: jshint
-        language_version: 4.2.6
+        language_version: 6.3.1
 -   repo: git@github.com:pre-commit/mirrors-eslint
     sha: 02999128135512d63e07d4a8a05d424cde3fe5d1
     hooks:
     -   id: eslint
         args:
         - --quiet
-        language_version: 4.2.6
+        language_version: 6.3.1
 -   repo: git@github.com:pre-commit/mirrors-scss-lint
     sha: f840ac610d8d9d76b666062416241f2156b3f388
     hooks:
@@ -28,4 +28,4 @@
     sha: 0be04381d2541c98f7c874aaa9cb988ba963b77e
     hooks:
     -   id: jscs
-        language_version: 4.2.6
+        language_version: 6.3.1
