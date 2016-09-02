@@ -1,7 +1,7 @@
 # see http://pre-commit.com/#usage and run `pre-commit --help` for more info
 # To update these hooks, run `pre-commit autoupdate` and commit the changes.
 -   repo: git@github.com:pre-commit/pre-commit-hooks
-    sha: 17478a0a50faf20fd8e5b3fefe7435cea410df0b
+    sha: 18d7035de5388cc7775be57f529c154bf541aab9
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -9,23 +9,23 @@
     -   id: check-json
     -   id: check-merge-conflict
 -   repo: git@github.com:pre-commit/mirrors-jshint
-    sha: 0b547c64213cc0dda0aa8e6b420a38a356d51e7a
+    sha: 431358a85a3084cb86d731f2cd46490ec04f5c69
     hooks:
     -   id: jshint
         language_version: 6.3.1
 -   repo: git@github.com:pre-commit/mirrors-eslint
-    sha: 02999128135512d63e07d4a8a05d424cde3fe5d1
+    sha: e62419a27e36d6a9ba9a6bc48c53b23beab0cdd8
     hooks:
     -   id: eslint
         args:
         - --quiet
         language_version: 6.3.1
 -   repo: git@github.com:pre-commit/mirrors-scss-lint
-    sha: f840ac610d8d9d76b666062416241f2156b3f388
+    sha: 7265d327b943b0e740761f706bd2f1645f948908
     hooks:
     -   id: scss-lint
 -   repo: git@github.com:elidupuis/mirrors-jscs.git
-    sha: 0be04381d2541c98f7c874aaa9cb988ba963b77e
+    sha: 6a81c9851b7cc25421acdf8a3c7206e72615c559
     hooks:
     -   id: jscs
         language_version: 6.3.1
