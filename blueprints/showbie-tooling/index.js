@@ -1,11 +1,10 @@
-// jscs:disable
-/*jshint node:true*/
+/* eslint-env node */
 module.exports = {
   description: 'Install Showbie code style enforcement configuration and tooling',
 
   normalizeEntityName: function() {}, // no-op since we're just adding dependencies
 
-  beforeInstall: function(options) {
+  beforeInstall: function(/*options*/) {
     return this.addAddonsToProject({
       packages: [
         { name: 'ember-suave', target: '4.0.0' },
