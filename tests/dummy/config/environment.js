@@ -1,8 +1,8 @@
 /* eslint-env node */
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
+    environment,
     modulePrefix: 'dummy',
-    environment: environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {

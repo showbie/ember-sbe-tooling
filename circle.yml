@@ -10,7 +10,7 @@ dependencies:
         - pip install --upgrade pip
     override:
         - pip install pre-commit
-        - npm install -g bower
+        - npm install -g bower eslint-plugin-ember-suave
         - npm install
         - bower install
     post:
