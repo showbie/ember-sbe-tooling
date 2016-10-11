@@ -13,7 +13,8 @@ module.exports = {
     })
     .then(() => {
       return this.addPackagesToProject([
-        { name: 'eslint-plugin-ember-suave', target: '~1.0.0' }
+        { name: 'eslint-plugin-ember-suave', target: '~1.0.0' },
+        { name: 'lodash.samplesize', target: '^4.2.0' }
       ]);
     });
   },

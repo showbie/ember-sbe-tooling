@@ -40,6 +40,7 @@
     "ember-resolver": "^2.0.3",
     "eslint-plugin-ember-suave": "1.0.0",
     "loader.js": "^4.0.1",
+    "lodash.samplesize": "4.2.0",
     "node-slack": "0.0.7"
   },
   "keywords": [

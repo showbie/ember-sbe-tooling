@@ -1,8 +1,9 @@
 /* eslint-env node */
-let Slack = require('node-slack');
+const Slack = require('node-slack');
+const sampleSize = require('lodash.samplesize');
 
 // Look for slack configuration in the environment
-let hookURL = process.env.SLACK_HOOK_URL;
+const hookURL = process.env.SLACK_HOOK_URL;
 
 // For details on each option run `ember help release`
 module.exports = {
@@ -10,10 +11,44 @@ module.exports = {
   afterPush(project, tags) {
     if (hookURL) {
       let slack = new Slack(hookURL);
+      let kudos = sampleSize(CELEBRATE, 7).join(' ');
 
       return slack.send({
-        text: `*${project.name()}* ${tags.next} just dropped :bangbang: :100: :100: :fire: :fire: :mindblown: :boom: :eyes: :clap:`
+        text: `*${project.name()}* ${tags.next} just dropped ${kudos}`
       });
     }
   }
 };
+
+const CELEBRATE = [
+  ':+1:',
+  ':100:',
+  ':bangbang:',
+  ':bangbang:',
+  ':beers:',
+  ':bomb:',
+  ':boom:',
+  ':clap:',
+  ':cool:',
+  ':dart:',
+  ':dollar:',
+  ':eyes:',
+  ':facepunch:',
+  ':fire:',
+  ':gift_heart:',
+  ':heart_eyes:',
+  ':heart:',
+  ':mindblown:',
+  ':money_with_wings:',
+  ':muscle:',
+  ':neckbeard:',
+  ':ok_hand:',
+  ':raised_hands:',
+  ':rocket:',
+  ':shipit',
+  ':star:',
+  ':star2:',
+  ':stars:',
+  ':sunglasses:',
+  ':tada:'
+];
