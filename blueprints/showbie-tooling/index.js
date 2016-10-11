@@ -8,7 +8,7 @@ module.exports = {
     return this.addAddonsToProject({
       packages: [
         { name: 'ember-cli-eslint', target: '~3.0.0' },
-        { name: 'ember-cli-code-coverage', target: '0.2.2' }
+        { name: 'ember-cli-code-coverage', target: '~0.3.4' }
       ]
     })
     .then(() => {
