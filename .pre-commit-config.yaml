@@ -8,24 +8,15 @@
     -   id: check-yaml
     -   id: check-json
     -   id: check-merge-conflict
--   repo: git@github.com:pre-commit/mirrors-jshint
-    sha: 431358a85a3084cb86d731f2cd46490ec04f5c69
-    hooks:
-    -   id: jshint
-        language_version: 6.3.1
 -   repo: git@github.com:pre-commit/mirrors-eslint
-    sha: e62419a27e36d6a9ba9a6bc48c53b23beab0cdd8
+    sha: v3.7.0
     hooks:
     -   id: eslint
+        additional_dependencies: ['eslint', 'eslint-plugin-ember-suave']
         args:
         - --quiet
         language_version: 6.3.1
 -   repo: git@github.com:pre-commit/mirrors-scss-lint
-    sha: 7265d327b943b0e740761f706bd2f1645f948908
+    sha: v0.50.2
     hooks:
     -   id: scss-lint
--   repo: git@github.com:elidupuis/mirrors-jscs.git
-    sha: 6a81c9851b7cc25421acdf8a3c7206e72615c559
-    hooks:
-    -   id: jscs
-        language_version: 6.3.1
