@@ -4,7 +4,7 @@ module.exports = {
 
   normalizeEntityName() {}, // no-op since we're just adding dependencies
 
-  beforeInstall(/* options */) {
+  beforeInstall() {
     return this.addAddonsToProject({
       packages: [
         { name: 'ember-cli-eslint', target: '~3.0.0' },
@@ -16,5 +16,11 @@ module.exports = {
         { name: 'eslint-plugin-ember-suave', target: '~1.0.0' }
       ]);
     });
+  },
+
+  afterInstall() {
+    return this.removePackagesFromProject([
+      { name: 'ember-suave' }
+    ]);
   }
 };
