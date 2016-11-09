@@ -1,15 +1,25 @@
 # ember-sbe-tooling [![Circle CI][circleci-status]][circleci]
 
+This addon is for internal use on Showbie's Ember projects to enforce a consistent coding standard. We will not accecpt external pull requests but feel free to take inspiration from it.
+
 ## Usage
 
 ```
-// add this line to your package.json
-"ember-sbe-tooling": "git+ssh://git@github.com:showbie/ember-sbe-tooling.git#v0.1.5",
-
-// ...then run
-npm install
-ember g showbie-tooling
+ember install ember-sbe-tooling
 ```
+
+## Style enforcement
+
+This addon provides configuration for the following tools:
+
+- nvm
+- editorconfig
+- testem
+- eslint
+- scss-lint
+- pre-commit
+- CircleCI
+- ember-cli-release
 
 # Collaboration
 
