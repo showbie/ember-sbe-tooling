@@ -15,7 +15,7 @@
         additional_dependencies: ['eslint', 'eslint-plugin-ember-suave']
         args:
         - --quiet
-        language_version: 6.3.1
+        language_version: 6.9.4
 -   repo: git@github.com:pre-commit/mirrors-scss-lint
     sha: v0.50.2
     hooks:

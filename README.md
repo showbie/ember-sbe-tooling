@@ -8,6 +8,14 @@ This addon is for internal use on Showbie's Ember projects to enforce a consiste
 ember install ember-sbe-tooling
 ```
 
+To update you should be able to simply re-run the above command.
+
+Note that you should ensure you are using the appropriate version of Node:
+
+```
+nvm use
+```
+
 ## Style enforcement
 
 This addon provides configuration for the following tools:
