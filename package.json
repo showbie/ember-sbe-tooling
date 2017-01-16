@@ -29,7 +29,7 @@
     "ember-ajax": "^2.0.1",
     "ember-cli": "2.7.0",
     "ember-cli-app-version": "^1.0.0",
-    "ember-cli-code-coverage": "0.3.10",
+    "ember-cli-code-coverage": "0.3.11",
     "ember-cli-dependency-checker": "^1.2.0",
     "ember-cli-eslint": "3.0.2",
     "ember-cli-htmlbars": "^1.0.3",
@@ -60,7 +60,7 @@
     "defaultBlueprint": "showbie-tooling",
     "configPath": "tests/dummy/config",
     "versionCompatibility": {
-      "ember": ">1.13.0 <=2.7.0"
+      "ember": ">1.13.0 <=2.10.0"
     }
   }
 }
