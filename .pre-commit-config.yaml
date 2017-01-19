@@ -1,7 +1,7 @@
 # see http://pre-commit.com/#usage and run `pre-commit --help` for more info
 # To update these hooks, run `pre-commit autoupdate` and commit the changes.
 -   repo: git@github.com:pre-commit/pre-commit-hooks
-    sha: 18d7035de5388cc7775be57f529c154bf541aab9
+    sha: 5da199bb8d60f764c0f77a20b0a1dc3a7640bcdd
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -12,7 +12,9 @@
     sha: v3.7.0
     hooks:
     -   id: eslint
-        additional_dependencies: ['eslint', 'eslint-plugin-ember-suave']
+        additional_dependencies:
+        - eslint
+        - eslint-plugin-ember-suave
         args:
         - --quiet
         language_version: 6.9.4
