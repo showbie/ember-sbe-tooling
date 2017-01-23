@@ -1,4 +1,3 @@
-/* eslint-env node */
 const Slack = require('node-slack');
 const sampleSize = require('lodash.samplesize');
 
@@ -28,7 +27,9 @@ const CELEBRATE = [
   ':beers:',
   ':bomb:',
   ':boom:',
+  ':checkered_flag:',
   ':clap:',
+  ':cocktail:',
   ':cool:',
   ':dart:',
   ':dollar:',
@@ -42,10 +43,13 @@ const CELEBRATE = [
   ':money_with_wings:',
   ':muscle:',
   ':neckbeard:',
+  ':new:',
   ':ok_hand:',
   ':raised_hands:',
+  ':ribbon:',
   ':rocket:',
-  ':shipit',
+  ':shipit:',
+  ':smiley_cat:',
   ':star:',
   ':star2:',
   ':stars:',

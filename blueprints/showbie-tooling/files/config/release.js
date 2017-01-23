@@ -1,4 +1,3 @@
-/* eslint-env node */
 const Slack = require('node-slack');
 const sampleSize = require('lodash.samplesize');
 

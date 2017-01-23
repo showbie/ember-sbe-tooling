@@ -1,0 +1,5 @@
+public/scripts/**
+config/**
+blueprints/**/config/**
+vendor/*
+!vendor/shims/*
