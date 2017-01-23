@@ -37,20 +37,15 @@ This addon provides configuration for the following tools:
 * `npm install`
 * `bower install`
 
-## Running
+## Running Inception
+When updating this addon, you should run it's generator on itself.
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+* `ember g showbie-tooling`
+* Follow the command line prompts.
 
 ## Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
