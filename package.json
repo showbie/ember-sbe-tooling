@@ -1,6 +1,6 @@
 {
   "name": "ember-sbe-tooling",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Common tooling setup for all Showbie Ember projects",
   "bugs": {
     "url": "https://github.com/showbie/ember-sbe-tooling/issues"
