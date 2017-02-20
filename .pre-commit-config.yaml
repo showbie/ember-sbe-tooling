@@ -1,7 +1,7 @@
 # see http://pre-commit.com/#usage and run `pre-commit --help` for more info
 # To update these hooks, run `pre-commit autoupdate` and commit the changes.
 -   repo: git@github.com:pre-commit/pre-commit-hooks
-    sha: 5da199bb8d60f764c0f77a20b0a1dc3a7640bcdd
+    sha: e626cd57090d8df0be21e4df0f4e55cc3511d6ab
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -9,7 +9,7 @@
     -   id: check-json
     -   id: check-merge-conflict
 -   repo: git@github.com:pre-commit/mirrors-eslint
-    sha: v3.7.0
+    sha: v3.14.0
     hooks:
     -   id: eslint
         additional_dependencies:
@@ -19,6 +19,6 @@
         - --quiet
         language_version: 6.9.4
 -   repo: git@github.com:pre-commit/mirrors-scss-lint
-    sha: v0.50.2
+    sha: v0.52.0
     hooks:
     -   id: scss-lint
