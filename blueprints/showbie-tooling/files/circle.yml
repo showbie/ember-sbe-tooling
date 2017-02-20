@@ -1,8 +1,8 @@
 machine:
+    environment:
+        PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
     node:
         version: 6.9.4
-    python:
-        version: 2.7.9
 
 dependencies:
     pre:
@@ -10,11 +10,17 @@ dependencies:
         - pip install --upgrade pip
     override:
         - pip install pre-commit
-        - npm install -g bower eslint-plugin-ember-suave
-        - npm install
+        - yarn global add bower eslint-plugin-ember-suave
+        - yarn
         - bower install
+        - bower --version
+        # create pre-commit directory so it can be cached; see https://circleci.com/docs/how-cache-works/
+        - mkdir -p ~/.pre-commit
     post:
         - pre-commit install
+    cache_directories:
+        - ~/.pre-commit
+        - ~/.cache/yarn
 
 test:
     override:
