@@ -57,6 +57,6 @@ const CELEBRATE = [
   ':star2:',
   ':stars:',
   ':sunglasses:',
-  ':tada:'
-  ':two_hearts:',
+  ':tada:',
+  ':two_hearts:'
 ];

@@ -32,11 +32,13 @@ const CELEBRATE = [
   ':cocktail:',
   ':cool:',
   ':dart:',
+  ':dizzy:',
   ':dollar:',
   ':eyes:',
   ':facepunch:',
   ':fire:',
   ':gift_heart:',
+  ':hammer_and_wrench:',
   ':heart_eyes:',
   ':heart:',
   ':mindblown:',
@@ -50,9 +52,11 @@ const CELEBRATE = [
   ':rocket:',
   ':shipit:',
   ':smiley_cat:',
+  ':sparkles:',
   ':star:',
   ':star2:',
   ':stars:',
   ':sunglasses:',
-  ':tada:'
+  ':tada:',
+  ':two_hearts:'
 ];
