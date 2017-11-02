@@ -16,6 +16,15 @@ module.exports = {
       return this.addPackagesToProject([
         { name: 'eslint-plugin-ember', target: '^4.5.0' },
         { name: 'lodash.samplesize', target: '^4.2.0' },
+        { name: 'ember-cli-code-coverage', target: '~0.3.4' },
+        { name: 'stylelint', target: '~8.2.0' },
+        {
+          name: 'stylelint-config-property-sort-order-smacss',
+          target: '~2.0.0',
+        },
+        { name: 'stylelint-order', target: '^0.7.0' },
+        { name: 'stylelint-scss', target: '~2.1.0' },
+        { name: 'stylelint-selector-bem-pattern', target: '~2.0.0' },
       ]);
     });
   },
