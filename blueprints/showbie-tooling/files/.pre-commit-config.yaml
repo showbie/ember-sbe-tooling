@@ -20,7 +20,7 @@ repos:
         - --quiet
         language_version: 6.9.4
 -   repo: git@github.com:awebdeveloper/pre-commit-stylelint
-    sha: ''
+    sha: 'v0.0.2'
     hooks:
     -   id: stylelint
         additional_dependencies:
