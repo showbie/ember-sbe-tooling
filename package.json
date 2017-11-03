@@ -2,9 +2,7 @@
   "name": "ember-sbe-tooling",
   "version": "1.2.0",
   "description": "Common tooling setup for all Showbie Ember projects",
-  "keywords": [
-    "ember-addon"
-  ],
+  "keywords": ["ember-addon"],
   "bugs": {
     "url": "https://github.com/showbie/ember-sbe-tooling/issues"
   },
@@ -52,7 +50,7 @@
     "ember-resolver": "^2.0.3",
     "ember-source": "~2.11.0",
     "ember-welcome-page": "^2.0.2",
-    "eslint-plugin-ember-suave": "1.0.0",
+    "eslint-plugin-ember": "^4.5.0",
     "loader.js": "^4.0.10",
     "lodash.samplesize": "4.2.0",
     "node-slack": "0.0.7"
