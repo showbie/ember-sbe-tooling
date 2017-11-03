@@ -10,7 +10,7 @@ dependencies:
         - pip install --upgrade pip
     override:
         - pip install pre-commit
-        - yarn global add bower eslint-plugin-ember-suave
+        - yarn global add bower
         - yarn
         - bower install
         - bower --version
@@ -31,7 +31,7 @@ test:
         # Depends on environment variable `COVERAGE` being set in CI
         # You can also run locally: `COVERAGE=true ember test`
         - mkdir -p $CIRCLE_ARTIFACTS/coverage
-        - cp -r coverage/* $CIRCLE_ARTIFACTS/coverage
+        - if [ "$COVERAGE" = true ]; then cp -r coverage/* $CIRCLE_ARTIFACTS/coverage; fi
         # Collect xunit artifact; see https://circleci.com/docs/test-metadata#js
         # Depends on `testem.json` having:
         # ```js
