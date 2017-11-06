@@ -2,7 +2,9 @@
   "name": "ember-sbe-tooling",
   "version": "1.2.0",
   "description": "Common tooling setup for all Showbie Ember projects",
-  "keywords": ["ember-addon"],
+  "keywords": [
+    "ember-addon"
+  ],
   "bugs": {
     "url": "https://github.com/showbie/ember-sbe-tooling/issues"
   },
@@ -31,9 +33,9 @@
     "ember-ajax": "^2.4.1",
     "ember-cli": "2.11.1",
     "ember-cli-app-version": "^2.0.0",
-    "ember-cli-code-coverage": "0.3.11",
+    "ember-cli-code-coverage": "0.3.12",
     "ember-cli-dependency-checker": "^1.3.0",
-    "ember-cli-eslint": "3.0.2",
+    "ember-cli-eslint": "3.0.3",
     "ember-cli-htmlbars": "^1.1.1",
     "ember-cli-htmlbars-inline-precompile": "^0.3.6",
     "ember-cli-inject-live-reload": "^1.4.1",

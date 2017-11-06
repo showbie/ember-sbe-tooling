@@ -13,10 +13,10 @@ module.exports = {
     semi: ['error', 'always'],
 
     // Custom Ember rules.
-    'ember/new-module-imports': 'warn',
-    'ember/no-attrs-in-components': 'warn',
-    'ember/no-duplicate-dependent-keys': 'warn',
-    'ember/no-global-jquery': 'warn',
-    'ember/require-super-in-init': 'warn',
+    'ember/new-module-imports': 'error',
+    'ember/no-attrs-in-components': 'error',
+    'ember/no-duplicate-dependent-keys': 'error',
+    'ember/no-global-jquery': 'error',
+    'ember/require-super-in-init': 'error',
   },
-}
+};
