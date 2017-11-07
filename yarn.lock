@@ -5763,22 +5763,19 @@ styled_string@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/styled_string/-/styled_string-0.0.1.tgz#d22782bd81295459bc4f1df18c4bad8e94dd124a"
 
-stylelint-config-property-sort-order-smacss@^2.0.0:
+stylelint-config-property-sort-order-smacss@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-property-sort-order-smacss/-/stylelint-config-property-sort-order-smacss-2.0.0.tgz#6ad73d59fc60f45faf8e499e808f70dbdd0bce97"
   dependencies:
     css-property-sort-order-smacss "^2.0.0"
     stylelint-order "^0.6.0"
 
-stylelint-config-recommended@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-1.0.0.tgz#752c17fc68fa64cd5e7589e24f6e46e77e14a735"
-
-stylelint-config-standard@^17.0.0:
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-17.0.0.tgz#42103a090054ee2a3dde9ecaed55e5d4d9d059fc"
+stylelint-config-sass-guidelines@~3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-sass-guidelines/-/stylelint-config-sass-guidelines-3.1.0.tgz#4f447175050b9e27cb0b9d926e9f4775db9a379b"
   dependencies:
-    stylelint-config-recommended "^1.0.0"
+    stylelint-order "^0.6.0"
+    stylelint-scss "^2.0.0"
 
 stylelint-order@^0.6.0:
   version "0.6.0"
@@ -5797,7 +5794,7 @@ stylelint-order@^0.7.0:
     postcss "^6.0.11"
     postcss-sorting "^3.0.2"
 
-stylelint-scss@^2.1.0:
+stylelint-scss@^2.0.0, stylelint-scss@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-2.1.0.tgz#e3fe24262bcb09cf70d859b80b17099d511094de"
   dependencies:
@@ -5807,7 +5804,7 @@ stylelint-scss@^2.1.0:
     postcss-selector-parser "^2.0.0"
     postcss-value-parser "^3.3.0"
 
-stylelint-selector-bem-pattern@^2.0.0:
+stylelint-selector-bem-pattern@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-selector-bem-pattern/-/stylelint-selector-bem-pattern-2.0.0.tgz#9a6130c9c90963b30e925c917079d6c8fed73f45"
   dependencies:
@@ -5816,7 +5813,7 @@ stylelint-selector-bem-pattern@^2.0.0:
     postcss-bem-linter "^3.0.0"
     stylelint ">=3.0.2"
 
-stylelint@>=3.0.2, stylelint@^8.0.0, stylelint@^8.2.0:
+stylelint@>=3.0.2, stylelint@^8.0.0, stylelint@~8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-8.2.0.tgz#6a15044553fb5c3143b16d62013a370314495b0d"
   dependencies:

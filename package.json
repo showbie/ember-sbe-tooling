@@ -2,9 +2,7 @@
   "name": "ember-sbe-tooling",
   "version": "1.2.0",
   "description": "Common tooling setup for all Showbie Ember projects",
-  "keywords": [
-    "ember-addon"
-  ],
+  "keywords": ["ember-addon"],
   "bugs": {
     "url": "https://github.com/showbie/ember-sbe-tooling/issues"
   },
@@ -56,12 +54,12 @@
     "loader.js": "^4.0.10",
     "lodash.samplesize": "4.2.0",
     "node-slack": "0.0.7",
-    "stylelint": "^8.2.0",
-    "stylelint-config-property-sort-order-smacss": "^2.0.0",
-    "stylelint-config-standard": "^17.0.0",
+    "stylelint": "~8.2.0",
+    "stylelint-config-property-sort-order-smacss": "~2.0.0",
+    "stylelint-config-sass-guidelines": "~3.1.0",
     "stylelint-order": "^0.7.0",
-    "stylelint-scss": "^2.1.0",
-    "stylelint-selector-bem-pattern": "^2.0.0"
+    "stylelint-scss": "~2.1.0",
+    "stylelint-selector-bem-pattern": "~2.0.0"
   },
   "engines": {
     "node": ">= 0.12.0"
