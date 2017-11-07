@@ -9,40 +9,6 @@
     "stylelint-config-property-sort-order-smacss"
   ],
   "rules": {
-    "order/order": [
-      [
-        "custom-properties",
-        "dollar-variables",
-        {
-          "type": "at-rule",
-          "name": "extend"
-        },
-        {
-          "type": "at-rule",
-          "name": "include",
-          "hasBlock": false
-        },
-        "declarations",
-        {
-          "type": "at-rule",
-          "hasBlock": true
-        },
-        {
-          "type": "at-rule",
-          "name": "include",
-          "hasBlock": true
-        },
-        {
-          "type": "rule",
-          "selector": "/^&:\\w/"
-        },
-        {
-          "type": "rule",
-          "selector": "/^&::\\w/"
-        },
-        "rules"
-      ]
-    ],
     "order/properties-alphabetical-order": false,
 
     "plugin/selector-bem-pattern": {
