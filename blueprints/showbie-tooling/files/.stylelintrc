@@ -5,25 +5,10 @@
     "stylelint-selector-bem-pattern"
   ],
   "extends": [
-    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines",
     "stylelint-config-property-sort-order-smacss"
   ],
   "rules": {
-    "comment-empty-line-before": [
-      "always",
-      {
-        "except": ["first-nested"],
-        "ignore": ["after-comment", "stylelint-commands"]
-      }
-    ],
-    "declaration-empty-line-before": [
-      "always",
-      {
-        "except": ["first-nested"],
-        "ignore": ["after-declaration"]
-      }
-    ],
-
     "order/order": [
       [
         "custom-properties",
@@ -58,16 +43,10 @@
         "rules"
       ]
     ],
+    "order/properties-alphabetical-order": false,
 
     "plugin/selector-bem-pattern": {
       "preset": "bem"
-    },
-
-    "scss/at-extend-no-missing-placeholder": true,
-    "scss/at-import-no-partial-leading-underscore": true,
-    "scss/at-mixin-argumentless-call-parentheses": "always",
-    "scss/dollar-variable-colon-space-before": "never",
-    "scss/operator-no-unspaced": true,
-    "scss/selector-no-redundant-nesting-selector": true
+    }
   }
 }

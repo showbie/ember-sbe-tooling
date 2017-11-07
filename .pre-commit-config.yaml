@@ -26,7 +26,7 @@ repos:
         additional_dependencies:
         - stylelint
         - stylelint-config-property-sort-order-smacss
-        - stylelint-config-standard
+        - stylelint-config-sass-guidelines
         - stylelint-order
         - stylelint-scss
         - stylelint-selector-bem-pattern
