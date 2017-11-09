@@ -29,4 +29,3 @@ repos:
         - stylelint-config-sass-guidelines
         - stylelint-order
         - stylelint-scss
-        - stylelint-selector-bem-pattern

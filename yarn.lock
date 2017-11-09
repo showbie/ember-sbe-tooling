@@ -3893,13 +3893,13 @@ lodash@3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.8.0.tgz#376eb98bdcd9382a9365c33c4cb8250de1325b91"
 
-lodash@>=3.10.0, lodash@^4.0.0, lodash@^4.11.1, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.6.1:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
-
 lodash@^3.10.0, lodash@^3.10.1, lodash@^3.9.3:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
+
+lodash@^4.0.0, lodash@^4.11.1, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.6.1:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 log-symbols@^2.0.0:
   version "2.1.0"
@@ -4095,7 +4095,7 @@ minimatch@^2.0.3:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimatch@^3.0.3, minimatch@^3.0.4:
+minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
@@ -4694,14 +4694,6 @@ portfinder@^1.0.7:
     debug "^2.2.0"
     mkdirp "0.5.x"
 
-postcss-bem-linter@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-bem-linter/-/postcss-bem-linter-3.1.0.tgz#55352412fb481aad0d05148185a990734e1ca030"
-  dependencies:
-    minimatch "^3.0.3"
-    postcss "^6.0.6"
-    postcss-resolve-nested-selector "^0.1.1"
-
 postcss-less@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/postcss-less/-/postcss-less-1.1.2.tgz#97225f852972225926c8c66726256fa250c88558"
@@ -4756,14 +4748,6 @@ postcss-value-parser@^3.2.3, postcss-value-parser@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
-postcss@>=5.0.19, postcss@^6.0.11, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.3, postcss@^6.0.6, postcss@^6.0.7, postcss@^6.0.8:
-  version "6.0.14"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.14.tgz#5534c72114739e75d0afcf017db853099f562885"
-  dependencies:
-    chalk "^2.3.0"
-    source-map "^0.6.1"
-    supports-color "^4.4.0"
-
 postcss@^5.2.16:
   version "5.2.18"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.18.tgz#badfa1497d46244f6390f58b319830d9107853c5"
@@ -4772,6 +4756,14 @@ postcss@^5.2.16:
     js-base64 "^2.1.9"
     source-map "^0.5.6"
     supports-color "^3.2.3"
+
+postcss@^6.0.11, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.3, postcss@^6.0.6, postcss@^6.0.7, postcss@^6.0.8:
+  version "6.0.14"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.14.tgz#5534c72114739e75d0afcf017db853099f562885"
+  dependencies:
+    chalk "^2.3.0"
+    source-map "^0.6.1"
+    supports-color "^4.4.0"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -5770,7 +5762,7 @@ stylelint-config-property-sort-order-smacss@~2.0.0:
     css-property-sort-order-smacss "^2.0.0"
     stylelint-order "^0.6.0"
 
-stylelint-config-sass-guidelines@~3.1.0:
+stylelint-config-sass-guidelines@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-sass-guidelines/-/stylelint-config-sass-guidelines-3.1.0.tgz#4f447175050b9e27cb0b9d926e9f4775db9a379b"
   dependencies:
@@ -5804,16 +5796,7 @@ stylelint-scss@^2.0.0, stylelint-scss@~2.1.0:
     postcss-selector-parser "^2.0.0"
     postcss-value-parser "^3.3.0"
 
-stylelint-selector-bem-pattern@~2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-selector-bem-pattern/-/stylelint-selector-bem-pattern-2.0.0.tgz#9a6130c9c90963b30e925c917079d6c8fed73f45"
-  dependencies:
-    lodash ">=3.10.0"
-    postcss ">=5.0.19"
-    postcss-bem-linter "^3.0.0"
-    stylelint ">=3.0.2"
-
-stylelint@>=3.0.2, stylelint@^8.0.0, stylelint@~8.2.0:
+stylelint@^8.0.0, stylelint@~8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-8.2.0.tgz#6a15044553fb5c3143b16d62013a370314495b0d"
   dependencies:

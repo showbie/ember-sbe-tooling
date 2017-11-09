@@ -25,7 +25,6 @@ module.exports = {
         { name: 'stylelint-config-sass-guidelines', target: '~3.1.0' },
         { name: 'stylelint-order', target: '^0.7.0' },
         { name: 'stylelint-scss', target: '~2.1.0' },
-        { name: 'stylelint-selector-bem-pattern', target: '~2.0.0' },
       ]);
     });
   },
