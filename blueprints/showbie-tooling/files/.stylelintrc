@@ -9,7 +9,9 @@
     "stylelint-config-property-sort-order-smacss"
   ],
   "rules": {
-    "order/properties-alphabetical-order": false,
+    "selector-class-pattern": null,
+
+    "order/properties-alphabetical-order": null,
 
     "plugin/selector-bem-pattern": {
       "preset": "bem"
