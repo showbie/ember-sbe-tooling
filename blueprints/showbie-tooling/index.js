@@ -20,6 +20,7 @@ module.exports = {
         packages: [
           { name: 'ember-cli-eslint', target: '^4.0.0' },
           { name: 'ember-cli-code-coverage', target: '~0.3.4' },
+          { name: 'ember-cli-template-lint', target: '~0.7.5' },
         ],
       });
     });
