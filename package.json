@@ -55,7 +55,12 @@
     "eslint-plugin-ember": "^4.5.0",
     "loader.js": "^4.0.10",
     "lodash.samplesize": "4.2.0",
-    "node-slack": "0.0.7"
+    "node-slack": "0.0.7",
+    "stylelint": "~8.2.0",
+    "stylelint-config-property-sort-order-smacss": "~2.0.0",
+    "stylelint-config-sass-guidelines": "^4.0.1",
+    "stylelint-order": "^0.7.0",
+    "stylelint-scss": "~2.1.0"
   },
   "engines": {
     "node": ">= 0.12.0"

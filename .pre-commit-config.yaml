@@ -19,7 +19,13 @@ repos:
         args:
         - --quiet
         language_version: 6.9.4
--   repo: git@github.com:pre-commit/mirrors-scss-lint
-    sha: v0.55.0
+-   repo: git@github.com:awebdeveloper/pre-commit-stylelint
+    sha: 0.0.2
     hooks:
-    -   id: scss-lint
+    -   id: stylelint
+        additional_dependencies:
+        - stylelint
+        - stylelint-config-property-sort-order-smacss
+        - stylelint-config-sass-guidelines
+        - stylelint-order
+        - stylelint-scss
