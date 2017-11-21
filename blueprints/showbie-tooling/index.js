@@ -10,6 +10,7 @@ module.exports = {
     return this.addPackagesToProject([
       { name: 'eslint-plugin-ember', target: '^4.5.0' },
       { name: 'lodash.samplesize', target: '~4.2.0' }, // strictly for config/release
+      { name: 'node-slack', target: '~0.0.7' }, // strictly for config/release
       { name: 'stylelint', target: '~8.2.0' },
       {
         name: 'stylelint-config-property-sort-order-smacss',
@@ -25,6 +26,7 @@ module.exports = {
             { name: 'ember-cli-eslint', target: '^4.0.0' },
             { name: 'ember-cli-code-coverage', target: '~0.3.4' },
             { name: 'ember-cli-template-lint', target: '~0.7.5' },
+            { name: 'ember-cli-release', target: '^0.2.9' },
           ],
         });
       })
