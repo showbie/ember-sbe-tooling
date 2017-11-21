@@ -7,24 +7,18 @@ module.exports = {
 
   afterInstall() {
     // eslint-disable-next-line ember/named-functions-in-promises
-    return this.removePackagesFromProject([
-      { name: 'ember-suave' },
-      { name: 'eslint-plugin-ember-suave' },
+    return this.addPackagesToProject([
+      { name: 'eslint-plugin-ember', target: '^4.5.0' },
+      { name: 'lodash.samplesize', target: '~4.2.0' }, // strictly for config/release
+      { name: 'stylelint', target: '~8.2.0' },
+      {
+        name: 'stylelint-config-property-sort-order-smacss',
+        target: '~2.0.0',
+      },
+      { name: 'stylelint-config-sass-guidelines', target: '~4.0.1' },
+      { name: 'stylelint-order', target: '^0.7.0' },
+      { name: 'stylelint-scss', target: '~2.1.0' },
     ])
-      .then(() => {
-        return this.addPackagesToProject([
-          { name: 'eslint-plugin-ember', target: '^4.5.0' },
-          { name: 'lodash.samplesize', target: '~4.2.0' }, // strictly for config/release
-          { name: 'stylelint', target: '~8.2.0' },
-          {
-            name: 'stylelint-config-property-sort-order-smacss',
-            target: '~2.0.0',
-          },
-          { name: 'stylelint-config-sass-guidelines', target: '~4.0.1' },
-          { name: 'stylelint-order', target: '^0.7.0' },
-          { name: 'stylelint-scss', target: '~2.1.0' },
-        ]);
-      })
       .then(() => {
         return this.addAddonsToProject({
           packages: [
@@ -33,6 +27,12 @@ module.exports = {
             { name: 'ember-cli-template-lint', target: '~0.7.5' },
           ],
         });
+      })
+      .then(() => {
+        return this.removePackagesFromProject([
+          { name: 'ember-suave' },
+          { name: 'eslint-plugin-ember-suave' },
+        ]);
       });
   },
 };
