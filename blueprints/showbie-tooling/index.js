@@ -8,6 +8,7 @@ module.exports = {
   afterInstall() {
     // eslint-disable-next-line ember/named-functions-in-promises
     return this.addPackagesToProject([
+      { name: 'babel-plugin-transform-object-rest-spread', target: '~6.26.0' },
       { name: 'eslint-plugin-ember', target: '^4.5.0' },
       { name: 'lodash.samplesize', target: '~4.2.0' }, // strictly for config/release
       { name: 'node-slack', target: '~0.0.7' }, // strictly for config/release
