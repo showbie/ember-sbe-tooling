@@ -2,65 +2,54 @@
   "name": "ember-sbe-tooling",
   "version": "2.0.1",
   "description": "Common tooling setup for all Showbie Ember projects",
-  "keywords": [
-    "ember-addon"
-  ],
+  "homepage": "https://github.com/showbie/ember-sbe-tooling#readme",
+  "author": "Eli Dupuis @elidupuis (https://www.showbie.com/)",
   "bugs": {
     "url": "https://github.com/showbie/ember-sbe-tooling/issues"
   },
-  "homepage": "https://github.com/showbie/ember-sbe-tooling#readme",
-  "main": "index.js",
+  "contributors": [
+    "Jeff Nelson @stormwarning"
+  ],
+  "dependencies": {
+    "ember-cli-babel": "~6.11.0"
+  },
+  "devDependencies": {
+    "broccoli-asset-rev": "~2.6.0",
+    "ember-ajax": "~3.0.0",
+    "ember-cli": "~2.16.2",
+    "ember-cli-app-version": "~3.0.0",
+    "ember-cli-code-coverage": "0.3.12",
+    "ember-cli-dependency-checker": "~2.0.0",
+    "ember-cli-eslint": "~4.2.3",
+    "ember-cli-htmlbars": "~2.0.1",
+    "ember-cli-htmlbars-inline-precompile": "~1.0.0",
+    "ember-cli-inject-live-reload": "~1.6.1",
+    "ember-cli-qunit": "~4.0.0",
+    "ember-cli-release": "~0.2.9",
+    "ember-cli-shims": "~1.1.0",
+    "ember-cli-sri": "~2.1.0",
+    "ember-cli-test-loader": "^1.1.0",
+    "ember-cli-uglify": "~2.0.0",
+    "ember-data": "~2.16.2",
+    "ember-disable-prototype-extensions": "^1.1.0",
+    "ember-export-application-global": "~2.0.0",
+    "ember-load-initializers": "~1.0.0",
+    "ember-resolver": "~4.0.0",
+    "ember-source": "~2.16.0",
+    "ember-welcome-page": "^2.0.2",
+    "eslint-plugin-ember": "~5.0.3",
+    "loader.js": "~4.4.0",
+    "lodash.samplesize": "~4.2.0",
+    "node-slack": "0.0.7",
+    "stylelint": "~8.4.0",
+    "stylelint-config-property-sort-order-smacss": "~2.0.0",
+    "stylelint-config-sass-guidelines": "~4.0.1",
+    "stylelint-order": "~0.8.0",
+    "stylelint-scss": "~2.2.0"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
-  },
-  "scripts": {
-    "build": "ember build",
-    "start": "ember server",
-    "test": "ember try:each"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/showbie/ember-sbe-tooling.git"
-  },
-  "dependencies": {
-    "ember-cli-babel": "^5.1.7"
-  },
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "broccoli-asset-rev": "^2.4.5",
-    "ember-ajax": "^2.4.1",
-    "ember-cli": "2.11.1",
-    "ember-cli-app-version": "^2.0.0",
-    "ember-cli-code-coverage": "0.3.12",
-    "ember-cli-dependency-checker": "^1.3.0",
-    "ember-cli-eslint": "3.0.3",
-    "ember-cli-htmlbars": "^1.1.1",
-    "ember-cli-htmlbars-inline-precompile": "^0.3.6",
-    "ember-cli-inject-live-reload": "^1.4.1",
-    "ember-cli-qunit": "^3.0.1",
-    "ember-cli-release": "^0.2.9",
-    "ember-cli-shims": "^1.0.2",
-    "ember-cli-sri": "^2.1.0",
-    "ember-cli-test-loader": "^1.1.0",
-    "ember-cli-uglify": "^1.2.0",
-    "ember-data": "^2.11.0",
-    "ember-disable-prototype-extensions": "^1.1.0",
-    "ember-export-application-global": "^1.0.5",
-    "ember-load-initializers": "^0.6.0",
-    "ember-resolver": "^2.0.3",
-    "ember-source": "~2.11.0",
-    "ember-welcome-page": "^2.0.2",
-    "eslint-plugin-ember": "^4.5.0",
-    "loader.js": "^4.0.10",
-    "lodash.samplesize": "4.2.0",
-    "node-slack": "0.0.7",
-    "stylelint": "~8.2.0",
-    "stylelint-config-property-sort-order-smacss": "~2.0.0",
-    "stylelint-config-sass-guidelines": "^4.0.1",
-    "stylelint-order": "^0.7.0",
-    "stylelint-scss": "~2.1.0"
   },
   "engines": {
     "node": ">= 0.12.0"
@@ -71,5 +60,21 @@
     "versionCompatibility": {
       "ember": ">1.13.0 <=2.11.0"
     }
+  },
+  "keywords": [
+    "ember-addon"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "repository": "showbie/ember-sbe-tooling",
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember try:each"
   }
 }
