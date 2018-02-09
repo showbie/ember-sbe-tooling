@@ -8,7 +8,7 @@
     "url": "https://github.com/showbie/ember-sbe-tooling/issues"
   },
   "contributors": [
-    "Jeff Nelson @stormwarning"
+    "Jeff Nelson @stormwarning (https://www.showbie.com/)"
   ],
   "dependencies": {
     "ember-cli-babel": "~6.11.0"
@@ -41,6 +41,8 @@
     "loader.js": "~4.4.0",
     "lodash.samplesize": "~4.2.0",
     "node-slack": "0.0.7",
+    "prettier-eslint-cli": "~4.7.0",
+    "prettier-stylelint": "~0.4.2",
     "stylelint": "~8.4.0",
     "stylelint-config-property-sort-order-smacss": "~2.0.0",
     "stylelint-config-sass-guidelines": "~4.0.1",
@@ -74,6 +76,7 @@
   "repository": "showbie/ember-sbe-tooling",
   "scripts": {
     "build": "ember build",
+    "postinstall": "pre-commit install",
     "start": "ember server",
     "test": "ember try:each"
   }
