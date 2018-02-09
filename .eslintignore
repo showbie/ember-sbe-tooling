@@ -3,3 +3,6 @@ config/**
 blueprints/**/config/**
 vendor/*
 !vendor/shims/*
+
+dist/**
+tmp/**

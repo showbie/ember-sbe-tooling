@@ -2,3 +2,6 @@ public/scripts/**
 config/**
 vendor/*
 !vendor/shims/*
+
+dist/**
+tmp/**

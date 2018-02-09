@@ -1,8 +1,11 @@
 module.exports = {
   root: true,
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 2017,
     sourceType: 'module',
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+    },
   },
   env: {
     browser: true,
@@ -13,10 +16,17 @@ module.exports = {
     semi: ['error', 'always'],
 
     // Custom Ember rules.
-    'ember/new-module-imports': 'error',
-    'ember/no-attrs-in-components': 'error',
-    'ember/no-duplicate-dependent-keys': 'error',
-    'ember/no-global-jquery': 'error',
-    'ember/require-super-in-init': 'error',
+    'ember/no-empty-attrs': 'warn',
+    'ember/no-observers': 'warn',
+    'ember/use-ember-get-and-set': 'warn',
+
+    'ember/order-in-components': 'warn',
+    'ember/order-in-controllers': 'warn',
+    'ember/order-in-models': 'warn',
+    'ember/order-in-routes': 'warn',
+  },
+  globals: {
+    Rx: true,
+    Map: true,
   },
 };

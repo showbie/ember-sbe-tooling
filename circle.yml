@@ -2,19 +2,21 @@ machine:
     environment:
         PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
     node:
-        version: 6.9.4
+        version: 6
 
 dependencies:
     pre:
-        # ensures pre-commit dependencies are properly installed; see https://github.com/pre-commit/pre-commit/issues/280
+        # ensures pre-commit dependencies are properly installed;
+        # see https://github.com/pre-commit/pre-commit/issues/280
         - pip install --upgrade pip
     override:
         - pip install pre-commit
-        - yarn global add bower
+        - yarn global add bower ember-cli
         - yarn
         - bower install
         - bower --version
-        # create pre-commit directory so it can be cached; see https://circleci.com/docs/how-cache-works/
+        # create pre-commit directory so it can be cached;
+        # see https://circleci.com/docs/how-cache-works/
         - mkdir -p ~/.pre-commit
     post:
         - pre-commit install
