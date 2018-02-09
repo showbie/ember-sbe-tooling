@@ -11,10 +11,8 @@ dependencies:
         - pip install --upgrade pip
     override:
         - pip install pre-commit
-        - yarn global add bower ember-cli
+        - yarn global add ember-cli
         - yarn
-        - bower install
-        - bower --version
         # create pre-commit directory so it can be cached;
         # see https://circleci.com/docs/how-cache-works/
         - mkdir -p ~/.pre-commit
