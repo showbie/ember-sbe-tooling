@@ -25,18 +25,9 @@ dependencies:
 test:
     override:
         - pre-commit run --all-files
-        - npm test
     post:
         # Collect code coverage artifacts; see https://github.com/kategengler/ember-cli-code-coverage
         # Depends on environment variable `COVERAGE` being set in CI
         # You can also run locally: `COVERAGE=true ember test`
         - mkdir -p $CIRCLE_ARTIFACTS/coverage
         - if [ "$COVERAGE" = true ]; then cp -r coverage/* $CIRCLE_ARTIFACTS/coverage; fi
-        # Collect xunit artifact; see https://circleci.com/docs/test-metadata#js
-        # Depends on `testem.json` having:
-        # ```js
-        # "reporter": "xunit",
-        # "report_file": "tests/reports/QUnit.xml",
-        # ```
-        - mkdir -p $CIRCLE_TEST_REPORTS/QUnit
-        - cp tests/reports/* $CIRCLE_TEST_REPORTS/QUnit/
