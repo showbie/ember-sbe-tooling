@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-sbe-tooling'
+  name: 'ember-sbe-tooling',
 };
