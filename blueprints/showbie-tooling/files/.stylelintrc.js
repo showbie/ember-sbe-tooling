@@ -14,7 +14,14 @@ module.exports = {
     'order/properties-alphabetical-order': null,
 
     // Temporary rules to reduce error noise.
-    'max-nesting-depth': [1, { severity: 'warning' }],
+    'max-nesting-depth': [
+      1,
+      {
+        severity: 'warning',
+        ignore: 'blockless-at-rules',
+        ignoreAtRules: ['include'],
+      },
+    ],
     'media-feature-name-no-vendor-prefix': [true, { severity: 'warning' }],
     'property-no-vendor-prefix': [true, { severity: 'warning' }],
     'selector-no-vendor-prefix': [true, { severity: 'warning' }],
