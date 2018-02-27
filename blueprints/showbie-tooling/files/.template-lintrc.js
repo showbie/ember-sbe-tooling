@@ -1,10 +1,6 @@
 module.exports = {
-  // extends: 'recommended',
-  ignore: [
-    'showbie/templates/noscript',
-    'showbie-styleguide/**/*',
-    'showbie-ui/**/*',
-  ],
+  extends: 'recommended',
+  ignore: ['dummy/**/*'],
   rules: {
     'bare-strings': [
       'Showbie',
@@ -19,6 +15,5 @@ module.exports = {
       '...',
       '!',
     ],
-    'self-closing-void-elements': false,
   },
 };
