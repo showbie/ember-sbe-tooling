@@ -25,8 +25,5 @@ module.exports = {
     'ember/order-in-models': 'warn',
     'ember/order-in-routes': 'warn',
   },
-  globals: {
-    Rx: true,
-    Map: true,
-  },
+  globals: {},
 };
