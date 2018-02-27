@@ -18,8 +18,7 @@ module.exports = {
       1,
       {
         severity: 'warning',
-        ignore: 'blockless-at-rules',
-        ignoreAtRules: ['include'],
+        ignoreAtRules: ['media', 'supports', 'include'],
       },
     ],
     'media-feature-name-no-vendor-prefix': [true, { severity: 'warning' }],
