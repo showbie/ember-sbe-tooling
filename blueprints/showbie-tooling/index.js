@@ -16,30 +16,23 @@ module.exports = {
       { name: 'eslint-plugin-ember', target: '~5.0.3' },
       { name: 'prettier-eslint-cli', target: '~4.7.0' },
       { name: 'prettier-stylelint', target: '~0.4.2' },
-      { name: 'stylelint', target: '~8.4.0' },
+      { name: 'stylelint', target: '~9.0.0' },
       {
         name: 'stylelint-config-property-sort-order-smacss',
         target: '~2.0.0',
       },
-      { name: 'stylelint-config-sass-guidelines', target: '~4.0.1' },
+      { name: 'stylelint-config-sass-guidelines', target: '~5.0.0' },
       { name: 'stylelint-order', target: '~0.8.0' },
       { name: 'stylelint-scss', target: '~2.2.0' },
-    ])
-      .then(() => {
-        return this.addAddonsToProject({
-          packages: [
-            { name: 'ember-cli-eslint', target: '~4.2.3' },
-            { name: 'ember-cli-code-coverage', target: '~0.3.12' },
-            { name: 'ember-cli-template-lint', target: '~0.7.5' },
-            { name: 'ember-cli-release', target: '~0.2.9' },
-          ],
-        });
-      })
-      .then(() => {
-        return this.removePackagesFromProject([
-          { name: 'ember-suave' },
-          { name: 'eslint-plugin-ember-suave' },
-        ]);
+    ]).then(() => {
+      return this.addAddonsToProject({
+        packages: [
+          { name: 'ember-cli-eslint', target: '~4.2.3' },
+          { name: 'ember-cli-code-coverage', target: '~0.3.12' },
+          { name: 'ember-cli-template-lint', target: '~0.7.5' },
+          { name: 'ember-cli-release', target: '~0.2.9' },
+        ],
       });
+    });
   },
 };
