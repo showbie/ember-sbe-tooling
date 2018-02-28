@@ -57,13 +57,9 @@ npm i -g eslint-plugin-ember
 - `git clone` this repository
 - `yarn install`
 
-### Running Tests
-
-- `yarn test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-
 For more information on using ember-cli, visit <http://www.ember-cli.com/>.
 
-[npm]: https://npmjs.org/
+[npm]: https://www.npmjs.com/package/ember-sbe-tooling
 
 [npm-ver]: https://img.shields.io/npm/v/ember-sbe-tooling.svg?style=flat-square
 
