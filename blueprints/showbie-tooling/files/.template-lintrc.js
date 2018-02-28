@@ -1,7 +1,19 @@
 module.exports = {
   extends: 'recommended',
-  ignore: [],
+  ignore: ['dummy/**/*'],
   rules: {
-    'bare-strings': ['Showbie', 'PRO', 'beta']
-  }
+    'bare-strings': [
+      'Showbie',
+      'PRO',
+      '‹',
+      '›',
+      '/',
+      '|',
+      '*',
+      ':',
+      '.',
+      '...',
+      '!',
+    ],
+  },
 };

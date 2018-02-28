@@ -21,3 +21,6 @@ aws-credentials.json
 
 # generated reports
 /tests/reports
+
+# https://code.visualstudio.com/docs/languages/jsconfig
+jsconfig.json

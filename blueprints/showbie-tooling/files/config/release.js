@@ -13,10 +13,10 @@ module.exports = {
       let kudos = sampleSize(CELEBRATE, 7).join(' ');
 
       return slack.send({
-        text: `*${project.name()}* ${tags.next} just dropped ${kudos}`
+        text: `*${project.name()}* ${tags.next} just dropped ${kudos}`,
       });
     }
-  }
+  },
 };
 
 const CELEBRATE = [
@@ -58,5 +58,5 @@ const CELEBRATE = [
   ':stars:',
   ':sunglasses:',
   ':tada:',
-  ':two_hearts:'
+  ':two_hearts:',
 ];
