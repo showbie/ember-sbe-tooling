@@ -29,9 +29,9 @@ jobs:
       - run: yarn install --no-lockfile --non-interactive
 
       - save_cache:
-        paths:
-          - node_modules
-        key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
       - run: yarn test
