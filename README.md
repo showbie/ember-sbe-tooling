@@ -3,8 +3,8 @@
 [![npm version][npm-ver]][npm]
 [![Circle CI][circleci-status]][circleci]
 
-This addon is for internal use on Showbie's Ember projects to enforce a 
-consistent coding standard. We will not accept external pull requests but feel 
+This addon is for internal use on Showbie's Ember projects to enforce a
+consistent coding standard. We will not accept external pull requests but feel
 free to take inspiration from it.
 
 ## Usage
@@ -13,7 +13,7 @@ free to take inspiration from it.
 ember install ember-sbe-tooling
 ```
 
-To update the addon, you should be able to simply re-run the above command. If 
+To update the addon, you should be able to simply re-run the above command. If
 needed you can also run the blueprints independently:
 
 ```sh
@@ -43,7 +43,7 @@ This addon provides configuration for the following tools:
 
 ## IDE integration
 
-For realtime feedback in your editor, you may need to install 
+For realtime feedback in your editor, you may need to install
 [eslint-plugin-ember][] globally:
 
 ```sh
