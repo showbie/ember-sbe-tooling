@@ -13,6 +13,7 @@ module.exports = {
       { name: 'node-slack', target: '~0.0.7' },
 
       // Linting & formatting packages.
+      { name: 'babel-plugin-transform-object-rest-spread', target: '~6.26.0' },
       { name: 'eslint-plugin-ember', target: '~5.0.3' },
       { name: 'prettier-eslint-cli', target: '~4.7.0' },
       { name: 'prettier-stylelint', target: '~0.4.2' },
