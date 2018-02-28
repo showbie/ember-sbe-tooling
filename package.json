@@ -1,6 +1,6 @@
 {
   "name": "ember-sbe-tooling",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Common tooling setup for all Showbie Ember projects",
   "homepage": "https://github.com/showbie/ember-sbe-tooling#readme",
   "author": "Eli Dupuis @elidupuis (https://www.showbie.com/)",
