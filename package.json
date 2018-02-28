@@ -71,6 +71,6 @@
     "build": "ember build",
     "postinstall": "pre-commit install",
     "start": "ember server",
-    "test": "ember try:each"
+    "test": "pre-commit run --all-files"
   }
 }
