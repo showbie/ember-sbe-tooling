@@ -10,13 +10,23 @@ jobs:
       - image: circleci/python:3.6.4-node-browsers
     steps:
       - checkout
-      - run: python --version
       # https://pre-commit.com/#install
       - run: curl https://bootstrap.pypa.io/get-pip.py | sudo python - pre-commit
-      - run: pre-commit --version
-      - run: sudo npm install -g yarn@latest
-      - run: node --version
-      - run: yarn --version
+      # https://yarnpkg.com/en/docs/install
+      - run:
+          name: Install yarn
+          command: |
+            curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+            echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+            sudo apt-get install apt-transport-https
+            sudo apt-get update && sudo apt-get install yarn
+      - run:
+          name: All the versions
+          command: |
+            python --version
+            pre-commit --version
+            node --version
+            yarn --version
 
       # Download and cache dependencies
       - restore_cache:
