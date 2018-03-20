@@ -1,15 +1,24 @@
 {
   "name": "ember-sbe-tooling",
-  "version": "3.0.1",
   "description": "Common tooling setup for all Showbie Ember projects",
-  "homepage": "https://github.com/showbie/ember-sbe-tooling#readme",
+  "license": "MIT",
   "author": "Eli Dupuis @elidupuis (https://www.showbie.com/)",
+  "maintainers": [
+    "Jeff Nelson @stormwarning (https://www.showbie.com/)"
+  ],
+  "homepage": "https://github.com/showbie/ember-sbe-tooling#readme",
+  "repository": "showbie/ember-sbe-tooling",
   "bugs": {
     "url": "https://github.com/showbie/ember-sbe-tooling/issues"
   },
-  "contributors": [
-    "Jeff Nelson @stormwarning (https://www.showbie.com/)"
-  ],
+  "version": "3.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build": "ember build",
+    "postinstall": "pre-commit install",
+    "start": "ember server",
+    "test": "pre-commit run --all-files"
+  },
   "dependencies": {
     "ember-cli-babel": "~6.11.0"
   },
@@ -38,6 +47,7 @@
     "ember-source": "~2.16.0",
     "ember-welcome-page": "^2.0.2",
     "eslint-plugin-ember": "~5.0.3",
+    "lerna-changelog": "~0.7.0",
     "loader.js": "~4.4.0",
     "lodash.samplesize": "~4.2.0",
     "node-slack": "0.0.7",
@@ -49,28 +59,19 @@
     "stylelint-order": "~0.8.0",
     "stylelint-scss": "~2.2.0"
   },
+  "keywords": [
+    "ember blueprint",
+    "ember-addon"
+  ],
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
     "defaultBlueprint": "showbie-tooling"
   },
-  "keywords": [
-    "ember-addon",
-    "ember blueprint"
-  ],
-  "license": "MIT",
-  "main": "index.js",
   "prettier": {
     "arrowParens": "always",
     "singleQuote": true,
     "trailingComma": "es5"
-  },
-  "repository": "showbie/ember-sbe-tooling",
-  "scripts": {
-    "build": "ember build",
-    "postinstall": "pre-commit install",
-    "start": "ember server",
-    "test": "pre-commit run --all-files"
   }
 }
