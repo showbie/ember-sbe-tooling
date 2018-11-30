@@ -69,7 +69,6 @@
   "repository": "showbie/ember-sbe-tooling",
   "scripts": {
     "build": "ember build",
-    "postinstall": "pre-commit install",
     "start": "ember server",
     "test": "pre-commit run --all-files"
   }
