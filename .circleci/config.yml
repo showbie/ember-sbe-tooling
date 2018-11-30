@@ -4,44 +4,34 @@
 #
 version: 2
 jobs:
-  build:
+  lint:
     docker:
       # https://hub.docker.com/r/circleci/python/
-      - image: circleci/python:3.6.4-node-browsers
+      - image: circleci/python:3.6.6
     steps:
       - checkout
-      # https://pre-commit.com/#install
-      - run: curl https://bootstrap.pypa.io/get-pip.py | sudo python - pre-commit
-      # https://yarnpkg.com/en/docs/install
-      - run:
-          name: Install yarn
-          command: |
-            curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-            echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-            sudo apt-get install apt-transport-https
-            sudo apt-get update && sudo apt-get install yarn
-      - run:
-          name: All the versions
-          command: |
-            python --version
-            pre-commit --version
-            node --version
-            yarn --version
 
-      # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+            # when lock file changes, use increasingly general patterns to restore cache
+            - pre-commit-v1-{{ checksum ".pre-commit-config.yaml" }}
+            - pre-commit-v1-
 
-      - run: yarn global add ember-cli
-      - run: yarn install --no-lockfile --non-interactive
+      # https://pre-commit.com/#install
+      - run:
+          name: Install pre-commit
+          command: curl https://bootstrap.pypa.io/get-pip.py | sudo python - pre-commit
+
+      - run: pre-commit run --all-files
 
       - save_cache:
           paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+            - ~/.cache/pip
+            - ~/.cache/pre-commit
+          key: pre-commit-v1-{{ checksum ".pre-commit-config.yaml" }}
 
-      # run tests!
-      - run: yarn test
+workflows:
+  version: 2
+  pr-approval:
+    jobs:
+      - lint
