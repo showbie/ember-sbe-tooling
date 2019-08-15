@@ -1,5 +1,11 @@
 # ember-sbe-tooling
 
+## This addon is depcrecated and unmaintained
+
+The heading says it all 🤷
+
+--- 
+
 [![npm version][npm-ver]][npm]
 [![Circle CI][circleci-status]][circleci]
 
